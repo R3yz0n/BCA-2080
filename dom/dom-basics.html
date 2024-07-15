@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#" onsubmit="handleClick()">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+<script>
+    function handleClick() {
+
+        console.log("clicked");
+        let fistName = document.getElementById("firstName").value;
+        console.log(fistName);
+
+        let secondName = document.getElementById("lastName").value;
+        console.log(secondName);
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>
