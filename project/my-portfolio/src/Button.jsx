@@ -3,21 +3,8 @@ import { AiFillMessage } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 
 const Button = (props) => {
-  const buttonStyle = {
-    backgroundColor: props.type,
-    fontSize: "12px",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    padding: "10px 15px",
-    fontWeight: "bold",
-    display: "flex",
-    gap: "5px",
-    alignItems: "center",
-  };
-
   return (
-    <button style={buttonStyle}>
+    <button className="text-white bg-orange-500 rounded-lg  flex items-center justify-center p-1">
       {props.icon == "contact" ? (
         <AiFillMessage size="16px" />
       ) : (
