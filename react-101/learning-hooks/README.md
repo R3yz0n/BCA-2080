@@ -38,4 +38,12 @@ This README provides an overview of essential concepts related to state manageme
   }
   ```
 
-find the ID in the URL of the video (e.g., in `https://www.youtube.com/watch?v=za2FZ8QCE18`, `za2FZ8QCE18` is the ID).
+## Additional Resources
+
+For more detailed information, refer to the [React Documentation](https://reactjs.org/docs/hooks-state.html) on state and hooks.
+
+### Video Explanation
+
+Here’s a useful video that explains these concepts in detail:
+
+[![React State and Virtual DOM](https://img.youtube.com/vi/za2FZ8QCE18/maxresdefault.jpg)](https://www.youtube.com/watch?v=za2FZ8QCE18)
