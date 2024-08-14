@@ -1,30 +1,33 @@
 import React, { useState } from "react";
+import Count from "./Count";
+import Form from "./Form";
 
 const App = () => {
-  const [count, setCount] = useState(0);
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [name, setName] = useState("John");
-  const [toShow, setToShow] = useState(true);
-
-  const incrementCount = () => {
-    setCount(count + 10);
+  //parameter
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
-  const changeName = () => {
-    setName("new name");
+  const handlePasswordChange = (something) => {
+    setPassword(something.target.value);
   };
-  const hideOrShowName = () => {
-    setToShow(!toShow);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(email);
+    console.log(password);
   };
+
   return (
     <div>
-      <button onClick={incrementCount}>Increment Counter ( {count} )</button>
-      <br /> <br />
-      <button onClick={changeName}>Change name to your name :- {name} </button>
-      <br />
-      <br />
-      <button onClick={hideOrShowName}>Show or Hide name {toShow && name}</button>
+      <Form
+        handleSubmit={handleSubmit}
+        handlePasswordChange={handlePasswordChange}
+        handleEmailChange={handleEmailChange}
+      />
     </div>
   );
 };
