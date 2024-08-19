@@ -22,13 +22,13 @@ const App = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <Form
         handleSubmit={handleSubmit}
         handlePasswordChange={handlePasswordChange}
         handleEmailChange={handleEmailChange}
       />
-    </div>
+    </React.Fragment>
   );
 };
 
